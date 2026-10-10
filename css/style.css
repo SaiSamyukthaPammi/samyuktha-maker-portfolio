@@ -7257,11 +7257,11 @@ h2 span {
 
 
 
-    opacity: 0;
+    opacity: 1;
 
 
 
-    transform: translateY(28px);
+    transform: none;
 
 
 
@@ -9829,10 +9829,10 @@ h2 span {
     -webkit-backdrop-filter: blur(18px);
 }
 
-/* Reveal animation: visible only after JS adds .visible */
+/* Content must remain visible even when JavaScript does not run. */
 .reveal {
-    opacity: 0;
-    transform: translateY(28px);
+    opacity: 1;
+    transform: none;
     visibility: visible;
     transition: opacity .75s ease, transform .75s ease;
 }
@@ -10409,4 +10409,184 @@ main section[id] {
     font-size: 0.85rem;
     width: fit-content;
     height: auto;
+}
+
+/* Small circular profile picture in navbar */
+
+.brand {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    flex: 0 0 60px;
+    border-radius: 50%;
+}
+
+.brand-mark {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+.brand-profile-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 50%;
+}
+
+/* Keep navbar readable while scrolling */
+
+.site-header,
+.site-header.scrolled {
+    background: rgba(6, 16, 18, 0.96) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(85, 222, 213, 0.12);
+}
+
+
+/* =====================================================
+   BEYOND STEM — PHOTO + TEXT CARDS
+===================================================== */
+
+.beyond-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+/* ALL CARDS */
+
+.beyond-card {
+    min-width: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.beyond-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(85, 222, 213, 0.4);
+}
+
+/* FIRST ROW — LARGE CARDS */
+
+.beyond-card.beyond-feature {
+    display: flex;
+    flex-direction: column;
+    min-height: 390px;
+    padding: 16px;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.beyond-image {
+    width: 100%;
+    height: 215px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.beyond-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.beyond-feature:hover .beyond-image img {
+    transform: scale(1.04);
+}
+
+/* LARGE CARD TEXT */
+
+.beyond-card-content {
+    padding: 20px 4px 8px;
+}
+
+.beyond-category {
+    display: block;
+    color: #55ded5;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.beyond-feature h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.beyond-feature p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 6px;
+}
+
+/* SECOND ROW — SMALL CARDS */
+
+.beyond-card.beyond-small {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    min-height: 175px;
+    padding: 26px;
+}
+
+.beyond-small .beyond-icon {
+    margin-bottom: 18px;
+}
+
+.beyond-small h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.beyond-small p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .beyond-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+    .beyond-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .beyond-card.beyond-feature {
+        min-height: auto;
+    }
+
+    .beyond-image {
+        height: 230px;
+    }
+
+    .beyond-card.beyond-small {
+        min-height: 155px;
+    }
 }
