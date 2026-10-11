@@ -4911,3 +4911,5682 @@ h2 span {
 
 
 
+
+
+
+
+
+
+.video-modal-close:hover {
+
+
+
+    background: var(--accent);
+
+
+
+
+
+
+
+    color: #061012;
+
+
+
+
+
+
+
+    transform: rotate(90deg);
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   FEATURE COPY
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.feature-copy {
+
+
+
+    max-width: 520px;
+
+
+
+}
+
+
+
+
+
+
+
+.feature-category,
+
+
+
+.experience-type,
+
+
+
+.achievement-priority {
+
+
+
+    color: var(--accent);
+
+
+
+    font-size: 0.68rem;
+
+
+
+    font-weight: 600;
+
+
+
+    letter-spacing: 0.14em;
+
+
+
+    text-transform: uppercase;
+
+
+
+}
+
+
+
+
+
+
+
+.feature-category {
+
+
+
+    margin-bottom: 18px;
+
+
+
+}
+
+
+
+
+
+
+
+.feature-copy h3 {
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: clamp(2.3rem, 4vw, 4.25rem);
+
+
+
+    font-weight: 500;
+
+
+
+    letter-spacing: -0.04em;
+
+
+
+    margin-bottom: 14px;
+
+
+
+}
+
+
+
+
+
+
+
+.feature-highlight {
+
+
+
+    color: #d6e9e7;
+
+
+
+    font-weight: 500;
+
+
+
+    margin-bottom: 22px;
+
+
+
+}
+
+
+
+
+
+
+
+.feature-copy > p:not(.feature-category):not(.feature-highlight) {
+
+
+
+    color: var(--text-soft);
+
+
+
+    line-height: 1.9;
+
+
+
+}
+
+
+
+
+
+
+
+.tag-list {
+
+
+
+    margin-top: 28px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   RESEARCH PUBLICATION BUTTONS
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.feature-links {
+
+
+
+    display: flex;
+
+
+
+    flex-wrap: wrap;
+
+
+
+    gap: 12px;
+
+
+
+    margin-top: 32px;
+
+
+
+}
+
+
+
+
+
+
+
+.publication-button {
+
+
+
+    display: inline-flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: space-between;
+
+
+
+    gap: 16px;
+
+
+
+    min-width: 175px;
+
+
+
+    padding: 12px 15px;
+
+
+
+    color: #06211f;
+
+
+
+    background: var(--accent);
+
+
+
+    border: 1px solid var(--accent);
+
+
+
+    border-radius: 10px;
+
+
+
+    font-size: 0.76rem;
+
+
+
+    font-weight: 600;
+
+
+
+
+
+
+
+    transition:
+
+
+
+        transform 0.25s ease,
+
+
+
+        background 0.25s ease,
+
+
+
+        color 0.25s ease,
+
+
+
+        border-color 0.25s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.publication-button:hover {
+
+
+
+    transform: translateY(-3px);
+
+
+
+    background: transparent;
+
+
+
+    color: var(--accent);
+
+
+
+    border-color: var(--accent-border);
+
+
+
+}
+
+
+
+
+
+
+
+.publication-button-secondary {
+
+
+
+    background: transparent;
+
+
+
+    color: var(--text);
+
+
+
+    border-color: var(--border-strong);
+
+
+
+}
+
+
+
+
+
+
+
+.publication-button-secondary:hover {
+
+
+
+    background: var(--accent);
+
+
+
+    color: #06211f;
+
+
+
+    border-color: var(--accent);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   EXPERIENCE STORIES
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+/* Normal:
+
+
+
+   image LEFT = fixed 420 px
+
+
+
+   text RIGHT = flexible
+
+
+
+*/
+
+
+
+.experience-story {
+
+
+
+    display: grid;
+
+
+
+
+
+
+
+    grid-template-columns:
+
+
+
+        420px
+
+
+
+        minmax(0, 1fr);
+
+
+
+
+
+
+
+    gap: 58px;
+
+
+
+    align-items: center;
+
+
+
+    padding: 58px 0;
+
+
+
+    border-top: 1px solid var(--border);
+
+
+
+}
+
+
+
+
+
+
+
+.experience-story:last-child {
+
+
+
+    border-bottom: 1px solid var(--border);
+
+
+
+}
+
+
+
+
+
+
+
+/* Reverse:
+
+
+
+   text LEFT = flexible
+
+
+
+   image RIGHT = fixed 420 px
+
+
+
+*/
+
+
+
+.experience-story.reverse {
+
+
+
+    grid-template-columns:
+
+
+
+        minmax(0, 1fr)
+
+
+
+        420px;
+
+
+
+}
+
+
+
+
+
+
+
+.experience-story.reverse .experience-gallery {
+
+
+
+    order: 2;
+
+
+
+    justify-self: end;
+
+
+
+}
+
+
+
+
+
+
+
+.experience-story.reverse .experience-copy {
+
+
+
+    order: 1;
+
+
+
+}
+
+
+
+
+
+
+
+.experience-story:not(.reverse) .experience-gallery {
+
+
+
+    justify-self: start;
+
+
+
+}
+
+
+
+
+
+
+
+.experience-copy {
+
+
+
+    min-width: 0;
+
+
+
+}
+
+
+
+
+
+
+
+.experience-copy h3 {
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: clamp(2rem, 3.2vw, 3.3rem);
+
+
+
+    font-weight: 500;
+
+
+
+    letter-spacing: -0.035em;
+
+
+
+    margin: 9px 0 7px;
+
+
+
+}
+
+
+
+
+
+
+
+.experience-meta {
+
+
+
+    color: #d6e9e7;
+
+
+
+    font-size: 0.86rem;
+
+
+
+    margin-bottom: 19px;
+
+
+
+}
+
+
+
+
+
+
+
+.experience-copy > p:last-of-type {
+
+
+
+    color: var(--text-soft);
+
+
+
+    line-height: 1.82;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   LEADERSHIP
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.leadership-grid {
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns: repeat(2, 1fr);
+
+
+
+    border-top: 1px solid var(--border);
+
+
+
+    border-left: 1px solid var(--border);
+
+
+
+}
+
+
+
+
+
+
+
+.leadership-card {
+
+
+
+    min-height: 310px;
+
+
+
+    padding: 42px;
+
+
+
+    border-right: 1px solid var(--border);
+
+
+
+    border-bottom: 1px solid var(--border);
+
+
+
+
+
+
+
+    transition:
+
+
+
+        background 0.3s ease,
+
+
+
+        transform 0.3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.leadership-card:hover {
+
+
+
+    background: rgba(85, 222, 213, 0.03);
+
+
+
+}
+
+
+
+
+
+
+
+.card-number {
+
+
+
+    color: var(--accent);
+
+
+
+    font-size: 0.7rem;
+
+
+
+}
+
+
+
+
+
+
+
+.card-label {
+
+
+
+    color: var(--text-dim);
+
+
+
+    font-size: 0.68rem;
+
+
+
+    text-transform: uppercase;
+
+
+
+    letter-spacing: 0.12em;
+
+
+
+    margin-top: 50px;
+
+
+
+}
+
+
+
+
+
+
+
+.leadership-card h3 {
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: 2rem;
+
+
+
+    font-weight: 500;
+
+
+
+    margin: 10px 0 14px;
+
+
+
+}
+
+
+
+
+
+
+
+.leadership-card > p:last-child {
+
+
+
+    color: var(--text-soft);
+
+
+
+    font-size: 0.88rem;
+
+
+
+    line-height: 1.8;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   ACHIEVEMENTS
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.achievement-list {
+
+
+
+    border-top: 1px solid var(--border);
+
+
+
+}
+
+
+
+
+
+
+
+.achievement-evidence-row {
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns: 240px 1fr;
+
+
+
+    gap: 45px;
+
+
+
+    align-items: center;
+
+
+
+    padding: 31px 0;
+
+
+
+    border-bottom: 1px solid var(--border);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   ACHIEVEMENT IMAGE
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.achievement-image {
+
+
+
+    aspect-ratio: 4 / 3;
+
+
+
+    overflow: hidden;
+
+
+
+    border: 1px solid var(--border);
+
+
+
+    border-radius: 14px;
+
+
+
+    background: var(--bg-card);
+
+
+
+}
+
+
+
+
+
+
+
+.achievement-image img {
+
+
+
+    display: block;
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    object-fit: cover;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Certificate images */
+
+
+
+
+
+
+
+.achievement-image img.certificate-image {
+
+
+
+    object-fit: contain;
+
+
+
+    padding: 8px;
+
+
+
+    background: #f0f3f2;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Pearson / UAE Space Olympiad logos */
+
+
+
+
+
+
+
+.achievement-image img.achievement-logo {
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+
+
+
+
+    object-fit: contain;
+
+
+
+    object-position: center;
+
+
+
+
+
+
+
+    padding: 22px;
+
+
+
+
+
+
+
+    background: rgba(255, 255, 255, 0.025);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   PLACEHOLDER
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.achievement-placeholder {
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+
+
+
+
+    display: grid;
+
+
+
+    place-items: center;
+
+
+
+
+
+
+
+    position: relative;
+
+
+
+    overflow: hidden;
+
+
+
+
+
+
+
+    background:
+
+
+
+        radial-gradient(
+
+
+
+            circle at 75% 25%,
+
+
+
+            rgba(85, 222, 213, 0.18),
+
+
+
+            transparent 28%
+
+
+
+        ),
+
+
+
+        linear-gradient(
+
+
+
+            145deg,
+
+
+
+            #102629,
+
+
+
+            #071315
+
+
+
+        );
+
+
+
+}
+
+
+
+
+
+
+
+.achievement-placeholder::before {
+
+
+
+    content: "";
+
+
+
+    position: absolute;
+
+
+
+
+
+
+
+    width: 80%;
+
+
+
+    aspect-ratio: 1;
+
+
+
+
+
+
+
+    border: 1px dashed rgba(85, 222, 213, 0.16);
+
+
+
+    border-radius: 50%;
+
+
+
+}
+
+
+
+
+
+
+
+.achievement-placeholder span {
+
+
+
+    position: relative;
+
+
+
+    z-index: 2;
+
+
+
+
+
+
+
+    color: #d3f4f0;
+
+
+
+
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: 2rem;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   ACHIEVEMENT CONTENT
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.achievement-content {
+
+
+
+    max-width: 760px;
+
+
+
+}
+
+
+
+
+
+
+
+.achievement-content h3 {
+
+
+
+    font-family: var(--font-display);
+
+
+
+
+
+
+
+    font-size: clamp(1.7rem, 2.8vw, 2.6rem);
+
+
+
+    font-weight: 500;
+
+
+
+
+
+
+
+    margin: 7px 0 6px;
+
+
+
+}
+
+
+
+
+
+
+
+.achievement-result {
+
+
+
+    color: #d8e8e6;
+
+
+
+
+
+
+
+    font-size: 0.86rem;
+
+
+
+    font-weight: 500;
+
+
+
+
+
+
+
+    margin-bottom: 12px;
+
+
+
+}
+
+
+
+
+
+
+
+/*
+
+
+
+   Changed from > p:last-child because the certificate
+
+
+
+   button now comes after the description.
+
+
+
+*/
+
+
+
+.achievement-content > p:not(.achievement-priority):not(.achievement-result) {
+
+
+
+    color: var(--text-soft);
+
+
+
+    line-height: 1.75;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   VIEW CERTIFICATE BUTTON
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.achievement-certificate-link {
+
+
+
+    display: inline-flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: center;
+
+
+
+    gap: 10px;
+
+
+
+
+
+
+
+    margin-top: 22px;
+
+
+
+    padding: 11px 19px;
+
+
+
+
+
+
+
+    background: #55ded5;
+
+
+
+    border: 1px solid #55ded5;
+
+
+
+    border-radius: 999px;
+
+
+
+
+
+
+
+    color: #041313;
+
+
+
+
+
+
+
+    text-decoration: none;
+
+
+
+
+
+
+
+    font-size: 0.79rem;
+
+
+
+    font-weight: 800;
+
+
+
+    letter-spacing: 0.04em;
+
+
+
+
+
+
+
+    cursor: pointer;
+
+
+
+
+
+
+
+    box-shadow:
+
+
+
+        0 5px 18px rgba(85, 222, 213, 0.18);
+
+
+
+
+
+
+
+    transition:
+
+
+
+        background 0.25s ease,
+
+
+
+        color 0.25s ease,
+
+
+
+        border-color 0.25s ease,
+
+
+
+        transform 0.25s ease,
+
+
+
+        box-shadow 0.25s ease;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Arrow */
+
+
+
+
+
+
+
+.achievement-certificate-link span:last-child {
+
+
+
+    font-size: 1rem;
+
+
+
+
+
+
+
+    transition:
+
+
+
+        transform 0.25s ease;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Hover */
+
+
+
+
+
+
+
+.achievement-certificate-link:hover {
+
+
+
+    background: #ffffff;
+
+
+
+    border-color: #ffffff;
+
+
+
+
+
+
+
+    color: #071313;
+
+
+
+
+
+
+
+    transform: translateY(-3px);
+
+
+
+
+
+
+
+    box-shadow:
+
+
+
+        0 10px 30px rgba(85, 222, 213, 0.28);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Move arrow slightly when hovering */
+
+
+
+
+
+
+
+.achievement-certificate-link:hover span:last-child {
+
+
+
+    transform: translate(3px, -2px);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Keyboard accessibility */
+
+
+
+
+
+
+
+.achievement-certificate-link:focus-visible {
+
+
+
+    outline: 3px solid rgba(85, 222, 213, 0.4);
+
+
+
+    outline-offset: 4px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   BEYOND STEM
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.beyond-grid {
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns: repeat(4, 1fr);
+
+
+
+    gap: 16px;
+
+
+
+}
+
+
+
+
+
+
+
+.beyond-card {
+
+
+
+    min-height: 260px;
+
+
+
+    display: flex;
+
+
+
+    flex-direction: column;
+
+
+
+    justify-content: flex-end;
+
+
+
+    padding: 28px;
+
+
+
+    border: 1px solid var(--border);
+
+
+
+    border-radius: 16px;
+
+
+
+
+
+
+
+    background:
+
+
+
+        linear-gradient(
+
+
+
+            145deg,
+
+
+
+            rgba(255, 255, 255, 0.02),
+
+
+
+            rgba(255, 255, 255, 0)
+
+
+
+        );
+
+
+
+
+
+
+
+    transition:
+
+
+
+        transform 0.3s ease,
+
+
+
+        border-color 0.3s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.beyond-card:hover {
+
+
+
+    transform: translateY(-4px);
+
+
+
+    border-color: var(--accent-border);
+
+
+
+}
+
+
+
+
+
+
+
+.beyond-icon {
+
+
+
+    margin-bottom: auto;
+
+
+
+    color: var(--accent);
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: 2.5rem;
+
+
+
+}
+
+
+
+
+
+
+
+.beyond-card h3 {
+
+
+
+    font-family: var(--font-display);
+
+
+
+    font-size: 1.7rem;
+
+
+
+    font-weight: 500;
+
+
+
+}
+
+
+
+
+
+
+
+.beyond-card p {
+
+
+
+    color: var(--text-dim);
+
+
+
+    font-size: 0.78rem;
+
+
+
+    margin-top: 7px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   CONTACT
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.contact-section {
+
+
+
+    border-top: 1px solid var(--border);
+
+
+
+}
+
+
+
+
+
+
+
+.contact-grid {
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns: 1fr 1fr;
+
+
+
+    gap: 100px;
+
+
+
+    align-items: end;
+
+
+
+}
+
+
+
+
+
+
+
+.contact-content > p {
+
+
+
+    max-width: 480px;
+
+
+
+    color: var(--text-soft);
+
+
+
+    line-height: 1.9;
+
+
+
+}
+
+
+
+
+
+
+
+.contact-links {
+
+
+
+    margin-top: 35px;
+
+
+
+    border-top: 1px solid var(--border);
+
+
+
+}
+
+
+
+
+
+
+
+.contact-links a {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: space-between;
+
+
+
+    padding: 18px 0;
+
+
+
+    border-bottom: 1px solid var(--border);
+
+
+
+    color: #d7e5e3;
+
+
+
+
+
+
+
+    transition:
+
+
+
+        color 0.25s ease,
+
+
+
+        padding 0.25s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.contact-links a:hover {
+
+
+
+    color: var(--accent);
+
+
+
+    padding-left: 8px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   FOOTER
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.footer {
+
+
+
+    border-top: 1px solid var(--border);
+
+
+
+    padding: 28px 0;
+
+
+
+}
+
+
+
+
+
+
+
+.footer-content {
+
+
+
+    display: flex;
+
+
+
+    align-items: center;
+
+
+
+    justify-content: space-between;
+
+
+
+    color: var(--text-dim);
+
+
+
+    font-size: 0.7rem;
+
+
+
+}
+
+
+
+
+
+
+
+.footer a:hover {
+
+
+
+    color: var(--accent);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   SCROLL REVEAL
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.reveal {
+
+
+
+    opacity: 1;
+
+
+
+    transform: none;
+
+
+
+
+
+
+
+    transition:
+
+
+
+        opacity 0.75s ease,
+
+
+
+        transform 0.75s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.reveal.visible {
+
+
+
+    opacity: 1;
+
+
+
+    transform: translateY(0);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   REDUCED MOTION
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+@media (prefers-reduced-motion: reduce) {
+
+
+
+
+
+
+
+    html {
+
+
+
+        scroll-behavior: auto;
+
+
+
+    }
+
+
+
+
+
+
+
+    *,
+
+
+
+    *::before,
+
+
+
+    *::after {
+
+
+
+        animation-duration: 0.01ms !important;
+
+
+
+        animation-iteration-count: 1 !important;
+
+
+
+        transition-duration: 0.01ms !important;
+
+
+
+    }
+
+
+
+
+
+
+
+    .reveal {
+
+
+
+        opacity: 1;
+
+
+
+        transform: none;
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   KIDSPACE IMAGE FIX
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.experience-gallery.kidspace-gallery {
+
+
+
+    width: 360px;
+
+
+
+    height: 480px;
+
+
+
+    aspect-ratio: 3 / 4;
+
+
+
+    justify-self: end;
+
+
+
+}
+
+
+
+
+
+
+
+.experience-gallery.kidspace-gallery img {
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+    object-fit: cover;
+
+
+
+    object-position: center center;
+
+
+
+}
+
+
+
+/* =========================================================
+
+
+
+   2026 PORTFOLIO UPDATE
+
+
+
+\========================================================= */
+
+
+
+.nav-link { font-size: 0.82rem; }
+
+
+
+.eyebrow, .feature-category, .experience-type, .card-label,
+
+
+
+.achievement-priority, .gallery-topline, .metric-kicker { font-size: 0.78rem; }
+
+
+
+
+
+
+
+.project-tabs {
+
+
+
+    display: flex; flex-wrap: wrap; gap: 12px; margin: 0 0 38px;
+
+
+
+    padding-bottom: 18px; border-bottom: 1px solid var(--border-color);
+
+
+
+}
+
+
+
+.project-tab {
+
+
+
+    border: 1px solid var(--border-color); background: transparent; color: var(--text-muted);
+
+
+
+    padding: 12px 18px; border-radius: 999px; font: inherit; font-size: 0.86rem;
+
+
+
+    cursor: pointer; transition: 0.25s ease;
+
+
+
+}
+
+
+
+.project-tab:hover, .project-tab.active { color: var(--text-primary); border-color: var(--accent); background: rgba(85,222,213,.08); }
+
+
+
+.project-panel { display: none; grid-template-columns: minmax(0,1.08fr) minmax(0,.92fr); gap: 54px; align-items: start; }
+
+
+
+.project-panel.active { display: grid; animation: projectFade .3s ease; }
+
+
+
+.project-detail h3 { font-size: clamp(2.4rem,4vw,4rem); margin-bottom: 12px; }
+
+
+
+.project-detail h4 { margin: 24px 0 7px; color: var(--text-primary); font-size: 1rem; }
+
+
+
+.project-detail p { color: var(--text-muted); line-height: 1.8; }
+
+
+
+.asset-note { margin-top: 22px; padding: 14px 16px; border-left: 2px solid var(--accent); background: rgba(85,222,213,.05); font-size: .88rem; }
+
+
+
+@keyframes projectFade { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:none; } }
+
+
+
+
+
+
+
+.leadership-card[role="button"] { cursor: pointer; }
+
+
+
+.leadership-card[role="button"]::after { content: "Open details  ↗"; display:block; margin-top:22px; color:var(--accent); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase; }
+
+
+
+.leadership-card[role="button"]:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+
+
+.detail-modal { position:fixed; inset:0; z-index:2000; display:flex; align-items:center; justify-content:center; padding:24px; opacity:0; visibility:hidden; pointer-events:none; transition:.25s ease; }
+
+
+
+.detail-modal.open { opacity:1; visibility:visible; pointer-events:auto; }
+
+
+
+.detail-modal-backdrop { position:absolute; inset:0; background:rgba(0,0,0,.78); backdrop-filter:blur(8px); }
+
+
+
+.detail-modal-content { position:relative; width:min(680px,100%); max-height:82vh; overflow:auto; padding:42px; border:1px solid var(--border-color); border-radius:18px; background:var(--bg-primary); box-shadow:0 30px 90px rgba(0,0,0,.45); }
+
+
+
+.detail-modal-content h3 { font-size:clamp(2rem,5vw,3.4rem); margin:10px 0 18px; }
+
+
+
+.detail-modal-content p { color:var(--text-muted); line-height:1.8; }
+
+
+
+.detail-modal-close { position:absolute; top:16px; right:18px; border:0; background:transparent; color:var(--text-primary); font-size:2rem; cursor:pointer; }
+
+
+
+/* =========================================================
+
+
+
+   PROJECT SELECTOR — MAKE OTHER PROJECTS OBVIOUS
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.project-tabs {
+
+
+
+    margin-top: 28px;
+
+
+
+    margin-bottom: 52px;
+
+
+
+
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns: repeat(4, 1fr);
+
+
+
+    gap: 14px;
+
+
+
+}
+
+
+
+
+
+
+
+/* Add instruction above project buttons */
+
+
+
+.project-tabs::before {
+
+
+
+    content: "SELECT A PROJECT";
+
+
+
+    grid-column: 1 / -1;
+
+
+
+
+
+
+
+    margin-bottom: 4px;
+
+
+
+
+
+
+
+    color: var(--accent, #55d6d2);
+
+
+
+    font-size: 0.76rem;
+
+
+
+    font-weight: 700;
+
+
+
+    letter-spacing: 0.16em;
+
+
+
+}
+
+
+
+
+
+
+
+/* Individual project option */
+
+
+
+.project-tab {
+
+
+
+    position: relative;
+
+
+
+
+
+
+
+    min-height: 78px;
+
+
+
+    padding: 18px 20px;
+
+
+
+
+
+
+
+    border: 1px solid rgba(85, 214, 210, 0.28);
+
+
+
+    border-radius: 18px;
+
+
+
+
+
+
+
+    background: rgba(255, 255, 255, 0.018);
+
+
+
+
+
+
+
+    color: inherit;
+
+
+
+
+
+
+
+    font-size: 0.95rem;
+
+
+
+    font-weight: 600;
+
+
+
+
+
+
+
+    cursor: pointer;
+
+
+
+
+
+
+
+    transition:
+
+
+
+        transform 0.25s ease,
+
+
+
+        border-color 0.25s ease,
+
+
+
+        background 0.25s ease;
+
+
+
+}
+
+
+
+
+
+
+
+/* Small project number */
+
+
+
+.project-tab::before {
+
+
+
+    display: block;
+
+
+
+
+
+
+
+    margin-bottom: 7px;
+
+
+
+
+
+
+
+    color: var(--accent, #55d6d2);
+
+
+
+
+
+
+
+    font-size: 0.66rem;
+
+
+
+    font-weight: 700;
+
+
+
+    letter-spacing: 0.12em;
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab:nth-of-type(1)::before {
+
+
+
+    content: "PROJECT 01";
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab:nth-of-type(2)::before {
+
+
+
+    content: "PROJECT 02";
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab:nth-of-type(3)::before {
+
+
+
+    content: "PROJECT 03";
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab:nth-of-type(4)::before {
+
+
+
+    content: "PROJECT 04";
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Hover makes it obvious that these are clickable */
+
+
+
+.project-tab:hover {
+
+
+
+    transform: translateY(-3px);
+
+
+
+
+
+
+
+    border-color: rgba(85, 214, 210, 0.7);
+
+
+
+
+
+
+
+    background: rgba(85, 214, 210, 0.06);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Selected project */
+
+
+
+.project-tab.active {
+
+
+
+    border-color: var(--accent, #55d6d2);
+
+
+
+
+
+
+
+    background: rgba(85, 214, 210, 0.13);
+
+
+
+
+
+
+
+    box-shadow:
+
+
+
+        inset 0 0 0 1px rgba(85, 214, 210, 0.12),
+
+
+
+        0 10px 30px rgba(0, 0, 0, 0.15);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   PROJECT RESOURCE BUTTONS
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.project-resource-links {
+
+
+
+    margin-top: 38px;
+
+
+
+
+
+
+
+    display: flex;
+
+
+
+    flex-wrap: wrap;
+
+
+
+    gap: 14px;
+
+
+
+}
+
+
+
+
+
+
+
+.project-resource-links .publication-button {
+
+
+
+    margin-top: 0;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   MOBILE PROJECT SELECTOR
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+
+
+
+
+
+
+    .project-tabs {
+
+
+
+        grid-template-columns: repeat(2, 1fr);
+
+
+
+        margin-bottom: 40px;
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 560px) {
+
+
+
+
+
+
+
+    .project-tabs {
+
+
+
+        grid-template-columns: 1fr;
+
+
+
+        gap: 10px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .project-tab {
+
+
+
+        min-height: auto;
+
+
+
+        text-align: left;
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   ACHIEVEMENT LOGO IMAGES
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.achievement-image {
+
+
+
+    overflow: hidden;
+
+
+
+}
+
+
+
+
+
+
+
+.achievement-image .achievement-logo {
+
+
+
+    display: block;
+
+
+
+
+
+
+
+    width: 100%;
+
+
+
+    height: 100%;
+
+
+
+
+
+
+
+    object-fit: contain;
+
+
+
+    object-position: center;
+
+
+
+
+
+
+
+    padding: 22px;
+
+
+
+
+
+
+
+    background: rgba(255, 255, 255, 0.025);
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   PROJECT SELECTOR — FINAL STYLE
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.project-tabs {
+
+
+
+    margin-top: 34px;
+
+
+
+    margin-bottom: 42px;
+
+
+
+
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns: repeat(4, 1fr);
+
+
+
+    gap: 12px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* SELECT A PROJECT label */
+
+
+
+
+
+
+
+.project-tabs::before {
+
+
+
+    content: "SELECT A PROJECT";
+
+
+
+    grid-column: 1 / -1;
+
+
+
+
+
+
+
+    margin-bottom: 5px;
+
+
+
+
+
+
+
+    color: #55ded5;
+
+
+
+
+
+
+
+    font-size: 0.74rem;
+
+
+
+    font-weight: 700;
+
+
+
+    letter-spacing: 0.16em;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Individual project buttons */
+
+
+
+
+
+
+
+.project-tab {
+
+
+
+    appearance: none;
+
+
+
+    -webkit-appearance: none;
+
+
+
+
+
+
+
+    position: relative;
+
+
+
+
+
+
+
+    min-height: 76px;
+
+
+
+    padding: 16px 18px;
+
+
+
+
+
+
+
+    background: rgba(85, 222, 213, 0.025);
+
+
+
+
+
+
+
+    border: 1px solid rgba(85, 222, 213, 0.28);
+
+
+
+    border-radius: 14px;
+
+
+
+
+
+
+
+    color: #dce9e7;
+
+
+
+
+
+
+
+    font-family: inherit;
+
+
+
+    font-size: 0.9rem;
+
+
+
+    font-weight: 600;
+
+
+
+
+
+
+
+    text-align: left;
+
+
+
+
+
+
+
+    cursor: pointer;
+
+
+
+
+
+
+
+    transition:
+
+
+
+        background 0.25s ease,
+
+
+
+        border-color 0.25s ease,
+
+
+
+        color 0.25s ease,
+
+
+
+        transform 0.25s ease,
+
+
+
+        box-shadow 0.25s ease;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Project number */
+
+
+
+
+
+
+
+.project-tab::before {
+
+
+
+    display: block;
+
+
+
+
+
+
+
+    margin-bottom: 7px;
+
+
+
+
+
+
+
+    color: #55ded5;
+
+
+
+
+
+
+
+    font-size: 0.65rem;
+
+
+
+    font-weight: 700;
+
+
+
+    letter-spacing: 0.13em;
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab:nth-of-type(1)::before {
+
+
+
+    content: "PROJECT 01";
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab:nth-of-type(2)::before {
+
+
+
+    content: "PROJECT 02";
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab:nth-of-type(3)::before {
+
+
+
+    content: "PROJECT 03";
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab:nth-of-type(4)::before {
+
+
+
+    content: "PROJECT 04";
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Hover */
+
+
+
+
+
+
+
+.project-tab:hover {
+
+
+
+    background: rgba(85, 222, 213, 0.08);
+
+
+
+
+
+
+
+    border-color: rgba(85, 222, 213, 0.7);
+
+
+
+
+
+
+
+    color: #ffffff;
+
+
+
+
+
+
+
+    transform: translateY(-3px);
+
+
+
+
+
+
+
+    box-shadow:
+
+
+
+        0 8px 24px rgba(0, 0, 0, 0.18);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Currently selected project */
+
+
+
+
+
+
+
+.project-tab.active {
+
+
+
+    background: rgba(85, 222, 213, 0.14);
+
+
+
+
+
+
+
+    border-color: #55ded5;
+
+
+
+
+
+
+
+    color: #ffffff;
+
+
+
+
+
+
+
+    box-shadow:
+
+
+
+        inset 0 0 0 1px rgba(85, 222, 213, 0.08),
+
+
+
+        0 8px 25px rgba(0, 0, 0, 0.15);
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Active indicator */
+
+
+
+
+
+
+
+.project-tab.active::after {
+
+
+
+    content: "";
+
+
+
+
+
+
+
+    position: absolute;
+
+
+
+
+
+
+
+    left: 18px;
+
+
+
+    right: 18px;
+
+
+
+    bottom: 10px;
+
+
+
+
+
+
+
+    height: 2px;
+
+
+
+
+
+
+
+    background: #55ded5;
+
+
+
+
+
+
+
+    border-radius: 999px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Keyboard focus */
+
+
+
+
+
+
+
+.project-tab:focus-visible {
+
+
+
+    outline: 2px solid #55ded5;
+
+
+
+    outline-offset: 3px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   MOBILE
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+
+
+
+
+
+
+    .project-tabs {
+
+
+
+        grid-template-columns: repeat(2, 1fr);
+
+
+
+        margin-bottom: 36px;
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 560px) {
+
+
+
+
+
+
+
+    .project-tabs {
+
+
+
+        grid-template-columns: 1fr;
+
+
+
+        gap: 10px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .project-tab {
+
+
+
+        min-height: 68px;
+
+
+
+    }
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/* =========================================================
+
+
+
+   PROJECT SELECTOR
+
+
+
+\========================================================= */
+
+
+
+
+
+
+
+.project-tabs {
+
+
+
+    margin-top: 34px;
+
+
+
+    margin-bottom: 42px;
+
+
+
+
+
+
+
+    display: grid;
+
+
+
+    grid-template-columns: repeat(4, 1fr);
+
+
+
+    gap: 12px;
+
+
+
+}
+
+
+
+
+
+
+
+.project-tabs::before {
+
+
+
+    content: "SELECT A PROJECT";
+
+
+
+    grid-column: 1 / -1;
+
+
+
+
+
+
+
+    margin-bottom: 5px;
+
+
+
+
+
+
+
+    color: #55ded5;
+
+
+
+    font-size: 0.74rem;
+
+
+
+    font-weight: 700;
+
+
+
+    letter-spacing: 0.16em;
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab {
+
+
+
+    appearance: none;
+
+
+
+    -webkit-appearance: none;
+
+
+
+
+
+
+
+    min-height: 76px;
+
+
+
+    padding: 16px 18px;
+
+
+
+
+
+
+
+    background: rgba(85, 222, 213, 0.025);
+
+
+
+    border: 1px solid rgba(85, 222, 213, 0.28);
+
+
+
+    border-radius: 14px;
+
+
+
+
+
+
+
+    color: #dce9e7;
+
+
+
+    font-family: inherit;
+
+
+
+    font-size: 0.9rem;
+
+
+
+    font-weight: 600;
+
+
+
+    text-align: left;
+
+
+
+
+
+
+
+    cursor: pointer;
+
+
+
+
+
+
+
+    transition:
+
+
+
+        background 0.25s ease,
+
+
+
+        border-color 0.25s ease,
+
+
+
+        color 0.25s ease,
+
+
+
+        transform 0.25s ease,
+
+
+
+        box-shadow 0.25s ease;
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab:hover {
+
+
+
+    background: rgba(85, 222, 213, 0.08);
+
+
+
+    border-color: rgba(85, 222, 213, 0.7);
+
+
+
+    color: #ffffff;
+
+
+
+    transform: translateY(-3px);
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab.active {
+
+
+
+    background: rgba(85, 222, 213, 0.14);
+
+
+
+    border-color: #55ded5;
+
+
+
+    color: #ffffff;
+
+
+
+
+
+
+
+    box-shadow:
+
+
+
+        inset 0 0 0 1px rgba(85, 222, 213, 0.08),
+
+
+
+        0 8px 25px rgba(0, 0, 0, 0.15);
+
+
+
+}
+
+
+
+
+
+
+
+.project-tab:focus-visible {
+
+
+
+    outline: 2px solid #55ded5;
+
+
+
+    outline-offset: 3px;
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 900px) {
+
+
+
+    .project-tabs {
+
+
+
+        grid-template-columns: repeat(2, 1fr);
+
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 560px) {
+
+
+
+    .project-tabs {
+
+
+
+        grid-template-columns: 1fr;
+
+
+
+    }
+
+
+
+
+
+
+
+    .project-tab {
+
+
+
+        min-height: 68px;
+
+
+
+    }
+
+
+
+}
+
+
+
+/* =========================================================
+
+   INTERACTION STABILITY FIX
+
+\========================================================= */
+
+.project-tab,
+
+.gallery-button,
+
+.video-play-button,
+
+.leadership-card[role="button"],
+
+.publication-button {
+
+    pointer-events: auto;
+
+}
+
+
+
+.gallery-controls {
+
+    z-index: 20;
+
+}
+
+
+
+.video-play-button {
+
+    z-index: 20;
+
+}
+
+
+
+.project-panel {
+
+    display: none;
+
+}
+
+
+
+.project-panel.active {
+
+    display: grid;
+
+}
+
+
+
+.detail-modal-content {
+
+    background: var(--bg-primary);
+
+    color: var(--text-primary);
+
+}
+
+
+
+
+
+/* =========================================================
+
+   PROJECT SELECTOR — UI REPAIR
+
+   Keep this block at the VERY END of style.css
+
+\========================================================= */
+
+
+
+.project-tabs {
+
+    display: grid !important;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 12px !important;
+
+
+
+    margin-top: 34px !important;
+
+    margin-bottom: 42px !important;
+
+    padding: 0 !important;
+
+
+
+    border: 0 !important;
+
+    background: transparent !important;
+
+}
+
+
+
+.project-tabs::before {
+
+    content: "SELECT A PROJECT";
+
+    grid-column: 1 / -1;
+
+
+
+    display: block;
+
+    margin-bottom: 5px;
+
+
+
+    color: #55ded5;
+
+    font-size: 0.74rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.16em;
+
+    text-transform: uppercase;
+
+}
+
+
+
+
+
+/* Individual project button */
+
+.project-tab {
+
+    appearance: none !important;
+
+    -webkit-appearance: none !important;
+
+
+
+    position: relative;
+
+    display: block !important;
+
+
+
+    width: 100% !important;
+
+    min-height: 76px;
+
+
+
+    margin: 0 !important;
+
+    padding: 16px 18px !important;
+
+
+
+    border: 1px solid rgba(85, 222, 213, 0.28) !important;
+
+    border-radius: 14px !important;
+
+
+
+    background: rgba(85, 222, 213, 0.025) !important;
+
+
+
+    color: #dce9e7 !important;
+
+
+
+    font-family: "DM Sans", sans-serif !important;
+
+    font-size: 0.9rem !important;
+
+    font-weight: 600 !important;
+
+    line-height: 1.3 !important;
+
+
+
+    text-align: left !important;
+
+
+
+    cursor: pointer;
+
+
+
+    box-shadow: none !important;
+
+
+
+    transition:
+
+        background 0.25s ease,
+
+        border-color 0.25s ease,
+
+        color 0.25s ease,
+
+        transform 0.25s ease,
+
+        box-shadow 0.25s ease;
+
+}
+
+
+
+
+
+/* Small PROJECT 01 / 02 / 03 / 04 label */
+
+.project-tab::before {
+
+    display: block;
+
+
+
+    margin-bottom: 7px;
+
+
+
+    color: #55ded5;
+
+
+
+    font-size: 0.65rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.13em;
+
+    line-height: 1;
+
+
+
+    text-transform: uppercase;
+
+}
+
+
+
+.project-tab:nth-of-type(1)::before {
+
+    content: "PROJECT 01";
+
+}
+
+
+
+.project-tab:nth-of-type(2)::before {
+
+    content: "PROJECT 02";
+
+}
+
+
+
+.project-tab:nth-of-type(3)::before {
+
+    content: "PROJECT 03";
+
+}
+
+
+
+.project-tab:nth-of-type(4)::before {
+
+    content: "PROJECT 04";
+
+}
+
+
+
+
+
+/* Remove any old underline/pill pseudo styling */
+
+.project-tab::after,
+
+.project-tab.active::after {
+
+    content: none !important;
+
+    display: none !important;
+
+}
+
+
+
+
+
+/* Hover */
+
+.project-tab:hover {
+
+    background: rgba(85, 222, 213, 0.08) !important;
+
+
+
+    border-color: rgba(85, 222, 213, 0.7) !important;
+
+
+
+    color: #ffffff !important;
+
+
+
+    transform: translateY(-3px);
+
+
+
+    box-shadow:
+
+        0 8px 24px rgba(0, 0, 0, 0.18) !important;
+
+}
+
+
+
+
+
+/* Selected project */
+
+.project-tab.active {
+
+    background: rgba(85, 222, 213, 0.14) !important;
+
+
+
+    border-color: #55ded5 !important;
+
+
+
+    color: #ffffff !important;
+
+
+
+    transform: none;
+
+
+
+    box-shadow:
+
+        inset 0 0 0 1px rgba(85, 222, 213, 0.08),
+
+        0 8px 25px rgba(0, 0, 0, 0.15) !important;
+
+}
+
+
+
+
+
+.project-tab:focus-visible {
+
+    outline: 2px solid #55ded5 !important;
+
+    outline-offset: 3px;
+
+}
+
+
+
+
+
+/* =========================================================
+
+   RESPONSIVE PROJECT SELECTOR
+
+\========================================================= */
+
+
+
+@media (max-width: 900px) {
+
+
+
+    .project-tabs {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+
+    }
+
+
+
+}
+
+
+
+
+
+@media (max-width: 560px) {
+
+
+
+    .project-tabs {
+
+        grid-template-columns: 1fr !important;
+
+        gap: 10px !important;
+
+    }
+
+
+
+    .project-tab {
+
+        min-height: 68px;
+
+        padding: 14px 16px !important;
+
+    }
+
+
+
+}
+
+
+
+
+
+/* =========================================================
+   FINAL SYNCHRONISED UI STABILITY LAYER
+   This is intentionally the final block in style.css.
+========================================================= */
+
+/* Fixed desktop/mobile header */
+.site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+}
+
+.site-header.scrolled {
+    background: rgba(6, 16, 18, 0.92) !important;
+    border-bottom: 1px solid var(--border) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+}
+
+/* Content must remain visible even when JavaScript does not run. */
+.reveal {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    transition: opacity .75s ease, transform .75s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Project selector */
+#projects .project-tabs {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 12px !important;
+    margin: 34px 0 42px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+}
+
+#projects .project-tabs::before {
+    content: "SELECT A PROJECT";
+    grid-column: 1 / -1;
+    display: block;
+    margin-bottom: 5px;
+    color: var(--accent);
+    font-size: .74rem;
+    font-weight: 700;
+    letter-spacing: .16em;
+}
+
+#projects button.project-tab {
+    appearance: none !important;
+    -webkit-appearance: none !important;
+    position: relative;
+    display: block !important;
+    width: 100% !important;
+    min-height: 76px;
+    margin: 0 !important;
+    padding: 16px 18px !important;
+    border: 1px solid rgba(85, 222, 213, .28) !important;
+    border-radius: 14px !important;
+    background: rgba(85, 222, 213, .025) !important;
+    color: #dce9e7 !important;
+    font: 600 .9rem/1.3 var(--font-body) !important;
+    text-align: left !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    transition: background .25s ease, border-color .25s ease,
+                color .25s ease, transform .25s ease, box-shadow .25s ease;
+}
+
+#projects button.project-tab::before {
+    display: block;
+    margin-bottom: 7px;
+    color: var(--accent);
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .13em;
+}
+
+#projects button.project-tab:nth-of-type(1)::before { content: "PROJECT 01"; }
+#projects button.project-tab:nth-of-type(2)::before { content: "PROJECT 02"; }
+#projects button.project-tab:nth-of-type(3)::before { content: "PROJECT 03"; }
+#projects button.project-tab:nth-of-type(4)::before { content: "PROJECT 04"; }
+
+#projects button.project-tab::after {
+    content: none !important;
+    display: none !important;
+}
+
+#projects button.project-tab:hover {
+    background: rgba(85, 222, 213, .08) !important;
+    border-color: rgba(85, 222, 213, .7) !important;
+    color: #fff !important;
+    transform: translateY(-3px);
+}
+
+#projects button.project-tab.active {
+    background: rgba(85, 222, 213, .14) !important;
+    border-color: var(--accent) !important;
+    color: #fff !important;
+    box-shadow: inset 0 0 0 1px rgba(85,222,213,.08),
+                0 8px 25px rgba(0,0,0,.15) !important;
+}
+
+/* Exactly one project panel is displayed */
+#projects .project-panel {
+    display: none !important;
+}
+
+#projects .project-panel.active {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1.08fr) minmax(0, .92fr);
+    gap: 54px;
+    align-items: start;
+}
+
+/* Keep all interactive controls above media/overlays */
+.gallery {
+    position: relative;
+}
+
+.gallery-controls,
+.gallery-topline,
+.video-play-button {
+    position: absolute;
+    z-index: 30 !important;
+}
+
+.gallery-button,
+.video-play-button,
+.leadership-card[role="button"],
+.publication-button,
+.project-tab {
+    pointer-events: auto !important;
+}
+
+/* Anchor destinations should not hide under fixed header */
+main section[id] {
+    scroll-margin-top: 100px;
+}
+
+@media (max-width: 900px) {
+    #projects .project-tabs {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+
+    #projects .project-panel.active {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+}
+
+@media (max-width: 560px) {
+    #projects .project-tabs {
+        grid-template-columns: 1fr !important;
+        gap: 10px !important;
+    }
+
+    #projects button.project-tab {
+        min-height: 68px;
+        padding: 14px 16px !important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1 !important;
+        transform: none !important;
+    }
+}
+
+
+/* =========================================
+   INCREASE TAG & CATEGORY FONT SIZES
+   ACROSS THE PORTFOLIO
+========================================= */
+
+/* Interest tags and project skill tags */
+.interest-list span,
+.tag-list span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    padding: 10px 16px;
+}
+
+/* Small section headings */
+.eyebrow {
+    font-size: 0.85rem;
+}
+
+/* Project, experience and achievement categories */
+.feature-category,
+.experience-type,
+.achievement-priority {
+    font-size: 0.85rem;
+    line-height: 1.5;
+}
+
+/* Homepage achievement card labels */
+.metric-kicker {
+    font-size: 0.72rem;
+    line-height: 1.5;
+}
+
+/* Leadership card category labels */
+.card-label {
+    font-size: 0.82rem;
+}
+
+/* Keep tags comfortable on smaller screens */
+@media (max-width: 650px) {
+    .interest-list span,
+    .tag-list span {
+        font-size: 0.85rem;
+        padding: 9px 13px;
+    }
+
+    .metric-kicker {
+        font-size: 0.68rem;
+    }
+}
+
+/* Keep World Top 10 on one line */
+.metric-card:last-child strong {
+    font-size: clamp(1.35rem, 2vw, 2rem);
+    white-space: nowrap;
+    letter-spacing: -0.04em;
+}
+
+
+/* =========================================
+   UPDATED LEADERSHIP SECTION
+   14 CARDS - 3 COLUMNS
+========================================= */
+
+#leadership .leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+    border: none;
+}
+
+#leadership .leadership-card {
+    min-width: 0;
+    min-height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 28px;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    background: linear-gradient(
+        145deg,
+        rgba(85, 222, 213, 0.055),
+        rgba(255, 255, 255, 0.01)
+    );
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+#leadership .leadership-card:hover {
+    transform: translateY(-4px);
+    background: rgba(85, 222, 213, 0.06);
+    border-color: var(--accent-border);
+}
+
+#leadership .leadership-card:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+/* Remove old "Open details" generated text */
+#leadership .leadership-card::after {
+    content: none;
+    display: none;
+}
+
+/* Card number */
+#leadership .card-number {
+    color: var(--accent);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* Card category */
+#leadership .card-label {
+    margin: 24px 0 8px;
+    color: var(--accent);
+    font-size: 0.82rem;
+    line-height: 1.45;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+
+/* Card heading */
+#leadership .leadership-card h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.35rem, 1.75vw, 1.8rem);
+    font-weight: 500;
+    line-height: 1.22;
+    margin: 0 0 12px;
+}
+
+/* Short description */
+#leadership .leadership-summary {
+    font-size: 0.89rem;
+    line-height: 1.65;
+    color: var(--text-soft);
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+
+    margin-bottom: 18px;
+}
+
+/* View More label */
+#leadership .leadership-view-more {
+    margin-top: auto;
+    color: var(--accent);
+    font-size: 0.83rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+#leadership .leadership-card:hover
+.leadership-view-more {
+    color: var(--accent-strong);
+}
+
+
+/* =========================================
+   LEADERSHIP DETAIL MODAL
+========================================= */
+
+/* Compact popup for text-only content */
+#leadershipModal .detail-modal-content {
+    width: min(650px, 100%);
+    max-height: min(86vh, 900px);
+    overflow-y: auto;
+
+    padding: 42px;
+
+    border: 1px solid var(--accent-border);
+    border-radius: 18px;
+
+    background: var(--bg-card);
+    color: var(--text);
+}
+
+/* Wider popup when a photograph is present */
+#leadershipModal.has-media .detail-modal-content {
+    width: min(980px, 100%);
+}
+
+/* Modal heading */
+#leadershipModal .detail-modal-content h3 {
+    font-family: var(--font-display);
+    font-size: clamp(1.75rem, 3.5vw, 2.8rem);
+    line-height: 1.2;
+    padding-right: 25px;
+}
+
+/* Modal description */
+#leadershipModal .detail-modal-content p {
+    color: var(--text-soft);
+    font-size: 1rem;
+    line-height: 1.8;
+}
+
+/* Close button */
+#leadershipModal .detail-modal-close {
+    position: sticky;
+    top: 0;
+    float: right;
+    z-index: 2;
+
+    display: grid;
+    place-items: center;
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid var(--accent-border);
+    border-radius: 50%;
+
+    background: var(--bg-secondary);
+    color: var(--text);
+
+    font-size: 1.7rem;
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease;
+}
+
+#leadershipModal .detail-modal-close:hover {
+    background: var(--accent);
+    color: var(--bg);
+}
+
+/* Image and description side by side */
+#leadershipModal .leadership-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+    align-items: start;
+}
+
+/* Modal photograph */
+#leadershipModal .leadership-detail-image {
+    display: block;
+    width: 100%;
+    max-height: 460px;
+
+    object-fit: contain;
+
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg-secondary);
+}
+
+/* Watch Video button */
+#leadershipModal .leadership-watch-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    width: fit-content;
+}
+
+
+/* =========================================
+   RESPONSIVE LEADERSHIP LAYOUT
+========================================= */
+
+/* Tablet - 2 cards per row */
+@media (max-width: 1100px) {
+    #leadership .leadership-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile - 1 card per row */
+@media (max-width: 650px) {
+    #leadership .leadership-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #leadership .leadership-card {
+        min-height: 230px;
+        padding: 23px;
+    }
+
+    #leadership .leadership-card h3 {
+        font-size: 1.5rem;
+    }
+
+    #leadershipModal {
+        padding: 12px;
+    }
+
+    #leadershipModal .detail-modal-content {
+        padding: 25px 20px;
+    }
+
+    #leadershipModal .leadership-detail-layout {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #leadershipModal .leadership-detail-image {
+        max-height: 330px;
+    }
+}
+
+/* Festival of Lights photo and video */
+
+#leadershipModal .leadership-detail-media {
+    display: grid;
+    gap: 16px;
+    min-width: 0;
+}
+
+#leadershipModal .leadership-detail-video {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #000;
+}
+
+
+
+/* =========================================
+   FESTIVAL OF LIGHTS MODAL LAYOUT
+========================================= */
+
+#leadershipModal .festival-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+/* Description uses full modal width */
+#leadershipModal .festival-description {
+    width: 100%;
+}
+
+#leadershipModal .festival-description p {
+    margin: 0;
+    line-height: 1.8;
+}
+
+/* Photo left, video right */
+#leadershipModal .festival-media {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    align-items: start;
+}
+
+/* Consistent media dimensions */
+#leadershipModal .festival-media img,
+#leadershipModal .festival-media video {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: #071214;
+}
+
+/* Preserve the entire group photo */
+#leadershipModal .festival-media img {
+    object-fit: contain;
+    max-height: none;
+}
+
+/* Preserve video proportions */
+#leadershipModal .festival-media video {
+    object-fit: contain;
+}
+
+/* Wider popup for Festival of Lights */
+#leadershipModal:has(.festival-layout) .detail-modal-content {
+    width: min(1100px, 100%);
+}
+
+/* Mobile layout */
+@media (max-width: 650px) {
+    #leadershipModal .festival-media {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    #leadershipModal .festival-layout {
+        gap: 20px;
+    }
+}
+
+/* IT Girls demonstration button */
+.project-detail .itgirls-demo-button {
+    margin-top: 28px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.85rem;
+}
+
+
+/* Cambridge AI video demonstration button */
+.experience-copy .cambridge-demo-button {
+    margin-top: 28px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.85rem;
+    width: fit-content;
+    height: auto;
+}
+
+/* Small circular profile picture in navbar */
+
+.brand {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    flex: 0 0 60px;
+    border-radius: 50%;
+}
+
+.brand-mark {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 0;
+    letter-spacing: normal;
+}
+
+.brand-profile-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+    border-radius: 50%;
+}
+
+/* Keep navbar readable while scrolling */
+
+.site-header,
+.site-header.scrolled {
+    background: rgba(6, 16, 18, 0.96) !important;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border-bottom: 1px solid rgba(85, 222, 213, 0.12);
+}
+
+
+/* =====================================================
+   BEYOND STEM — PHOTO + TEXT CARDS
+===================================================== */
+
+.beyond-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+/* ALL CARDS */
+
+.beyond-card {
+    min-width: 0;
+    border-radius: 18px;
+    overflow: hidden;
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.beyond-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(85, 222, 213, 0.4);
+}
+
+/* FIRST ROW — LARGE CARDS */
+
+.beyond-card.beyond-feature {
+    display: flex;
+    flex-direction: column;
+    min-height: 390px;
+    padding: 16px;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.beyond-image {
+    width: 100%;
+    height: 215px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.beyond-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.4s ease;
+}
+
+.beyond-feature:hover .beyond-image img {
+    transform: scale(1.04);
+}
+
+/* LARGE CARD TEXT */
+
+.beyond-card-content {
+    padding: 20px 4px 8px;
+}
+
+.beyond-category {
+    display: block;
+    color: #55ded5;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.beyond-feature h3 {
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.beyond-feature p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 6px;
+}
+
+/* SECOND ROW — SMALL CARDS */
+
+.beyond-card.beyond-small {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    min-height: 175px;
+    padding: 26px;
+}
+
+.beyond-small .beyond-icon {
+    margin-bottom: 18px;
+}
+
+.beyond-small h3 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.beyond-small p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+    .beyond-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+    .beyond-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .beyond-card.beyond-feature {
+        min-height: auto;
+    }
+
+    .beyond-image {
+        height: 230px;
+    }
+
+    .beyond-card.beyond-small {
+        min-height: 155px;
+    }
+}
